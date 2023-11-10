@@ -474,6 +474,12 @@ body{
     .nav{
         height : 58vh;
     }
+    
+    .skill-bars{
+        gap : 20px;
+        padding : 10px;
+        margin-bottom : 40px;
+    }
 }
 
 @media screen and (max-width: 360px){
