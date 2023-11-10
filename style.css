@@ -1,0 +1,508 @@
+body{
+    margin : 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    /* box-sizing: content-box; */
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align : left;
+}
+.text-right{
+    text-align : right;
+}
+
+.nav{
+    background-image: url("assets/macbook_mouse.jpg");
+    height : 65vh;
+    width : 100%;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hamburger-menu{
+    color : white;
+    font-size : 2rem;
+    position: relative;
+    left : 90%;
+    top : 15px;
+}
+
+
+
+
+.horizontal-list{
+    list-style: none;
+    text-align: center;
+    margin : 0px;
+}
+.horizontal-list div img{
+    height : 20px;
+    width : 20px;
+}
+.flex{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex div img{
+    margin-top : 16px;
+    margin-left : 10px;
+    height : 18px;
+    width : 23px;
+    color : white;
+    transition : all 0.2s;
+    filter: brightness(0) invert(1) saturate(2);
+}
+.flex div img:hover{
+    border-radius: 100%;
+    /* padding : 2px; */
+    box-shadow: 0px 0px 4px 4px white;
+    scale : 1.2;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin-top : 16px;
+    padding: 10px;
+}
+
+.horizontal-list li a{
+    text-decoration: none;
+    color : white;
+    font-size : 20px;
+    transition : color 0.4s;
+}
+
+.horizontal-list li a:hover{
+    color : lightgray;
+    /* border-bottom: 2px solid white; */
+}
+
+
+
+.name{
+    color : white;
+    text-align: center;
+    font-size: 3rem;
+    margin-top : 18vh;
+}
+@media screen and (max-width : 780px){
+    .name{
+        font-size : 2rem;
+    }
+}
+.name h1{
+    margin : 0px;
+}
+.horizontal-list li i{
+    color : white;
+    font-size:23px;
+    transition : all 0.1s;
+}
+.horizontal-list li i:hover{
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 4px white;
+    scale : 1.2;
+}
+
+
+/* about section */
+#about{
+    padding-top : 20px;
+    padding-bottom : 20px;
+}
+.my-image{
+    background-image : url("assets/profile-pic\ \(7\).png");
+    height : 200px;
+    width : 200px;
+    background-size: cover;
+    margin : auto;
+    margin-top : -14vh;
+    position : relative;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 4px white;
+}
+.about-me{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top : 5vh;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+/* skill section  */
+#skills{
+    padding-top : 30px;
+    padding-bottom : 30px;
+    background-color: #9e9b9b29;
+}
+
+.skill-bars{
+    flex-wrap : wrap;
+    gap : 30px;
+    width : 80%;
+    margin : auto;
+    /* border: 1px solid black; */
+    height : auto;
+    padding : 10px;
+    margin-bottom : 40px;
+}
+
+.skill-box{
+    /* border : 1px solid black; */
+    height : 40px;
+    width : 200px;
+    background-color: lightgray;
+    border-radius : 20px;
+}
+.skill-progress-box{
+    /* border : 1px solid black; */
+    height : 40px;
+    /* width : 80%; */
+    /* background-color: orange; */
+    border-radius : 20px;
+    display: flex;
+    align-items: center;
+    padding-left : 10px;
+    font-weight : 500;
+    color : white;
+    /* justify-content: center; */
+}
+
+/* bg-color */
+.bg-purple{
+    background-color: #93738c;
+}
+.bg-orange{
+    background-color: #ec4d1c;
+}
+.bg-green{
+    background-color: #0b8176;
+}
+/* PERCENTAGE CLASSES */
+.eighty-percent{
+    width : 80%;
+}
+
+.ninty-percent{
+    width: 90%;
+}
+
+.eighty-five-percent{
+    width : 85%;
+}
+
+/* experience section AND Education section  */
+
+#education{
+ 
+    padding : 5px 0px;
+    margin : 10px 0px;
+}
+.size-35px{
+    font-size : 35px;
+    margin : 50px;
+    margin-bottom : 70px;
+}
+.section-heading{
+    color : #2857a4;
+}
+.time-line{
+    width : 80%;
+    height : auto;
+    margin : auto;
+    position: relative;
+    /* border: 2px solid black; */
+}
+
+.time-line-box{
+    height : 200px;
+    width: 40%;
+    position : relative;
+    /* border: 2px solid black; */
+}
+.class{
+    margin : 0px;
+    font-size: 1.9rem;
+    color : #2857a4;
+}
+.school{
+    color : #eb822d;
+    font-size: 16px;
+    font-weight: 600;
+    margin : 4px;
+}
+.grade{
+    opacity : 0.7;
+    margin-top : 0px;
+}
+
+.time-line-box:nth-child(2n+1)::after{
+    content : " ";
+    height : 10px;
+    width : 10px;
+    border-radius: 50%;
+    position : absolute;
+    /* left : 50%; */
+    right : -26%;
+    top : 24%;
+    background-color: lightgray;
+    z-index: 1;
+}
+
+.time-line-box:nth-child(2n)::after{
+    content : " ";
+    height : 10px;
+    width : 10px;
+    border-radius: 50%;
+    position : absolute;
+    left : -26%;
+    top : 23%;
+    background-color: lightgray;
+    z-index: 1;
+}
+
+.time-line-box:nth-child(2n){
+    margin-left : 60%;
+}
+
+.straightLine{
+    height : 69%;
+    width : 0px;
+    position : absolute;
+    top : 8%;
+    left : 50%;
+    border : 1px dashed skyblue;
+}
+
+
+
+
+
+ .aeroplane{
+    position : sticky;
+    top : 30%;
+    transform : rotate(90deg);
+    z-index: 2;
+    scale : 1.5;
+    color : #2857a4;
+}
+
+/* Portfolio */
+#portfolio{
+    background-color: rgba(247, 240, 240, 0.73);
+    padding : 20px;
+    padding-bottom: 50px;
+}
+
+.portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap : 40px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.portfolio-box{
+    position: relative;
+    height: 300px;
+    width : 300px;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.portfolio-box a img{
+    height: 75%;
+    width : 100%;
+}
+.portfolio-box p a{
+    text-decoration: none;
+    font-size : 20px;
+    color : black;
+    font-weight: 600;
+    opacity: 0.6;
+    /* color : rgb(245, 201, 8); */
+}
+
+/* Contact section  */
+#contact{
+    width: 100%; 
+    padding-top: 20px;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+}
+.contact-container{
+  width : 80%;
+  margin : auto;
+    justify-content: center;
+    gap : 60px;
+}
+.contact-form{
+    width : 50%;
+    padding : 20px;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap : 30px;
+}
+.contact-form form input{
+    font-size:18px;
+    background-color: transparent;
+    border : none;
+    color : white;
+    outline : none;
+    border-bottom : 2px solid white;
+}
+.contact-form form textarea{
+    font-size:20px;
+    background-color: transparent;
+    border : none;
+    color : white;
+    outline : none;
+    width : 100%;
+    border-bottom : 2px solid white;
+}
+.contact-form form button{
+    padding : 10px 5px;
+    font-size: 1rem;
+    width : 40%;
+    border-radius: 10px;
+    border: 2px solid white;
+    color : white;
+    background-color: transparent;
+    margin : auto;
+}
+.my-detail{
+    color : white;
+    width : 50%;
+   
+}
+
+.my-detail span{
+    opacity : 0.8;
+}
+
+.horizontal-list li .hidden{
+    display: none;
+}
+.hidden{
+    display : none;
+}
+
+@media screen and (max-width: 785px){
+    
+    .horizontal-list li a{
+        font-size: 0.9rem;
+    }
+    .contact-form form button{
+        font-size: 1.2rem;
+        width : 65%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contact-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-form{
+        width : 90%;
+        /* padding : 20px; */
+    }
+    .my-detail{
+        color : white;
+        width : 90%;
+    }
+
+    .straightLine{
+        left : 5%;
+    }
+    .time-line-box{
+        left : 12%;
+        margin-top : 5px;
+        width : 90%;
+    }
+    .time-line-box:nth-child(2n){
+        margin-left : 0px;
+    }
+    .time-line-box:nth-child(2n+1)::after{
+        left : -9%;
+    }
+    .time-line-box:nth-child(2n)::after{
+        left : -9%;
+    }
+    .text-left{
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 580px){
+
+    .hidden{
+        display: inline-block;
+    }
+
+    .horizontal-list li .hidden{
+        display: inline-block;
+    }
+
+    .invisible{
+        display: none;
+    }
+
+    html{
+        font-size : 12px;
+    }
+
+    .contact-form form button{
+        font-size: 1.5rem;
+        width : 50%;
+    }
+    
+}
+
+@media screen and (max-width: 435px){
+    .nav{
+        height : 58vh;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .nav{
+        height : 60vh;
+    }
+}
+.visible{
+    padding : 0px;
+    width: 100%;
+    position : absolute;
+    top : 8%;
+    z-index: 3;
+    background-color: lightgray;
+}
+
+.visible li{
+    display: block;
+    padding : 10px 0px;
+    margin : 0px;
+   width : 100%;
+}
+
+.visible li i{
+    color : black;
+    
+}
+
+.visible li a{
+    font-size: 1.2rem;
+    color : black;
+    opacity : 0.8;
+}
+.visible li a:visited{
+    color : black;
+}
